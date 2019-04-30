@@ -26,7 +26,7 @@ const menus = [
 	},
 	{
 		title: '用户',
-		icon: 'reconciliation',
+		icon: 'user',
 		key: '/home/user',
 		subs: [
 			{title: '用户管理', icon: '', key: '/home/user/userManagement'}

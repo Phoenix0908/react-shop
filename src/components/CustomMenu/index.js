@@ -2,7 +2,7 @@ import React from 'react'
 import {Link,withRouter} from 'react-router-dom'
 import {Menu, Icon} from 'antd'
 
-
+@withRouter
 class CustomMenu extends React.Component {
 	state = {
 	    openKeys: [],

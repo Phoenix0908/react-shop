@@ -2,6 +2,7 @@ import React from 'react'
 import {Layout} from 'antd'
 import SiderNav from '../../components/SiderNav'
 import HeaderBar from '../../components/HeaderBar'
+import ContentMain from '../../components/ContentMain'
 
 const {Sider, Header, Content, Footer} = Layout
 
@@ -30,11 +31,8 @@ class Index extends React.Component{
 						<Header style={{background: '#fff', padding: '0 16px'}}>
 				            <HeaderBar collapsed={this.state.collapsed} onToggle={this.toggle}/>
 						</Header>
-						 <Content style={{
-				            margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280,
-				          }}
-				          >
-				            Content
+						 <Content>
+				            <ContentMain/>
 				          </Content>
 						<Footer style={{ textAlign: 'center' }}>
 				           React-Admin ©2018 Created by Phoenix
