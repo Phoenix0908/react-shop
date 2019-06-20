@@ -9,12 +9,22 @@ const {Sider, Header, Content, Footer} = Layout
 class Index extends React.Component{
 	state = {
 	    collapsed: false,
+	    fsize: '24px'
 	 };
 
 	toggle = () => {
 	    this.setState({
 	      collapsed: !this.state.collapsed,
 	    });
+	    if (this.state.collapsed === false) {
+	    	this.setState({
+	    		fsize: '12px'
+	    	})
+	    }else{
+	    	this.setState({
+	    		fsize: '24px'
+	    	})
+	    }
 	  }
 	render () {
 		return (
@@ -25,7 +35,7 @@ class Index extends React.Component{
 				          collapsed={this.state.collapsed}
 				          trigger={null}
 				        >
-				        <SiderNav/>
+				        <SiderNav fsize={this.state.fsize}/>
 				     </Sider>
 				     <Layout>
 						<Header style={{background: '#fff', padding: '0 16px'}}>

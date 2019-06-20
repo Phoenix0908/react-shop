@@ -1,9 +1,13 @@
 import React from 'react'
+import CustomBreadcrumb from '../../components/CustomBreadcrumb/index'
 
 class Home extends React.Component {
 	render () {
 		return (
-			<div>home</div>
+			<div>
+				<CustomBreadcrumb></CustomBreadcrumb>
+				<div>home</div>
+			</div>
 		)
 	}
 }

@@ -36,8 +36,9 @@ const menus = [
 
 class SiderNav extends React.Component {
 	render() {
+		const {fsize} = this.props
 		return (
-			<div style={{height: '100vh',overflowY: 'scroll'}}>
+			<div style={{height: '100vh',overflowY: 'scroll',fontSize:fsize}}>
 				<div style={style.logo}>HAPPY MALL</div>
 				<CustomMenu menus={menus}/>
 			</div>
@@ -50,7 +51,6 @@ const style = {
 		height: '35px',
 		background: 'rgba(255, 255, 255, .2)',
     	margin: '16px',
-    	fontSize: '24px',
     	color: '#fff',
     	textAlign: 'center'
 	}
